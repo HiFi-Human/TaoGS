@@ -1,7 +1,7 @@
 # [SIGGRAPH Asia 2025] Topology-Aware Optimization of Gaussian Primitives for Human-Centric Volumetric Videos
 [Yuheng Jiang](https://nowheretrix.github.io/), [Chengcheng Guo](https://Guochch.github.io/), [Yize Wu](https://github.com/wuyize25), [Yu Hong](https://github.com/xyi1023), [Shengkun Zhu](https://github.com/zsk0219), [Zhehao Shen](https://moqiyinlun.github.io/), [Yingliang Zhang](https://cn.linkedin.com/in/yingliangzhang), [Shaohui Jiao](https://cn.linkedin.com/in/shaohui-jiao-3b563826), [Zhuo Su](https://suzhuo.github.io/), [Lan Xu](http://xu-lan.com/), [Marc Habermann](https://people.mpi-inf.mpg.de/~mhaberma/), [Christian Theobalt](https://people.mpi-inf.mpg.de/~theobalt/)<br>
 | [Webpage](https://guochch.github.io/TaoGS/) | [Full Paper](https://arxiv.org/abs/2409.08353) |
-[Video](https://youtu.be/vwDE8xr78Bg) |
+[Video](https://youtu.be/vwDE8xr78Bg) | [Dataset](https://github.com/HiFi-Human/TaoGS_Dataset) | 
 <br>
 ![Teaser image](assets/teaser.png)
 ## Overview
