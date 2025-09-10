@@ -20,4 +20,48 @@ Our work is built upon [3DGS](https://github.com/graphdeco-inria/gaussian-splatt
 </div>
 </details>
 
+## Citation
+If you find this work useful for your research, please cite these works using the following BibTeX entry.
+```
+@misc{jiang2025topology,
+    title={Topology-Aware Optimization of Gaussian Primitives for Human-Centric Volumetric Videos}, 
+    author={Yuheng Jiang and Chengcheng Guo and Yize Wu and Yu Hong and Shengkun Zhu and Zhehao Shen and Yingliang Zhang and Shaohui Jiao and Zhuo Su and Lan Xu and Marc Habermann and Christian Theobalt},
+    year={2025},
+    eprint={2509.07653},
+    archivePrefix={arXiv},
+    primaryClass={cs.GR},
+    url={https://arxiv.org/abs/2509.07653}, 
+}
+
+@article{jiang2024robust,
+    title={Robust dual gaussian splatting for immersive human-centric volumetric videos},
+    author={Jiang, Yuheng and Shen, Zhehao and Hong, Yu and Guo, Chengcheng and Wu, Yize and Zhang, Yingliang and Yu, Jingyi and Xu, Lan},
+    journal={ACM Transactions on Graphics (TOG)},
+    volume={43},
+    number={6},
+    pages={1--15},
+    year={2024},
+    publisher={ACM New York, NY, USA}
+}
+
+@InProceedings{Jiang2025reperformer,
+    author={Jiang, Yuheng and Shen, Zhehao and Guo, Chengcheng and Hong, Yu and Su, Zhuo and Zhang, Yingliang and Habermann, Marc and Xu, Lan},
+    title={RePerformer: Immersive Human-centric Volumetric Videos from Playback to Photoreal Reperformance},
+    booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month={June},
+    year={2025},
+    pages={11349-11360}
+}
+
+@Article{kerbl3Dgaussians,
+    author       = {Kerbl, Bernhard and Kopanas, Georgios and Leimk{\"u}hler, Thomas and Drettakis, George},
+    title        = {3D Gaussian Splatting for Real-Time Radiance Field Rendering},
+    journal      = {ACM Transactions on Graphics},
+    number       = {4},
+    volume       = {42},
+    month        = {July},
+    year         = {2023},
+    url          = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/}
+}
+```
 Coming soon~
