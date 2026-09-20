@@ -12,7 +12,7 @@ Official implementation of TaoGS (Topology-Aware Optimization of Gaussian Primit
 
 We propose a novel motion-to-appearance Gaussian representation for robust tracking and high-fidelity rendering of general 4D scenes with topological changes. We track sparse motion Gaussians and incorporate new candidate Gaussians through a spatial-temporal tracker and error map to model new observations. The motion Gaussians are then transformed into a Gaussian Look-Up Table (GLUT), activating corresponding appearance Gaussians, which can be packed into 2D attribute maps for efficient video codec compression.
 
-Our work is built upon [3DGS](https://github.com/graphdeco-inria/gaussian-splatting), [DualGS](https://github.com/HiFi-Human/DualGS), and [Reperformer](https://github.com/HiFi-Human/Reperformer).
+Our work is built upon [3DGS](https://github.com/graphdeco-inria/gaussian-splatting), [DualGS](https://github.com/HiFi-Human/DualGS), and [RePerformer](https://github.com/HiFi-Human/Reperformer).
 
 This release provides training and rendering; the compression pipeline is not included.
 
@@ -110,9 +110,13 @@ new output directory for each run.
 | `--motion_rest_iters / --appearance_rest_iters` | `6000 / 10000` | Subsequent-frame iterations. |
 | `--edgs_fps_target_points` | `20000` | Motion points after initialization. |
 | `--densify_min_opacity` | `0.2` | First-frame opacity pruning threshold; preserves the point target. |
-| `--densify_max_screen_size` | `0` | Screen-radius pruning disabled. |
 | `--motion_folder` | `<run>/motion/track` | Motion results for appearance-only training. |
 | `-r` | `1` | Image downsampling factor. |
+
+`<run>` is the output directory passed to `-m`. If `--motion_folder` is omitted,
+it defaults to `<run>/motion/track`; for example, `-m /path/to/new-run` uses
+`/path/to/new-run/motion/track`. To reuse motion results from another run for
+appearance-only training, set `--stage appearance --motion_folder /path/to/previous-run/motion/track`.
 
 Checkpoints are saved as:
 
@@ -136,7 +140,7 @@ render all views. Use `--stage motion` to render motion Gaussians. The dataset,
 resolution, and background are loaded from the training configuration.
 Outputs are saved under `render/` and `gt/`.
 
-## License and Acknowledgments
+## License
 
 This repository retains the Gaussian Splatting research-only
 [license](LICENSE.md). We thank the authors of Gaussian Splatting, DualGS,
@@ -151,6 +155,10 @@ GLM headers retain their [license](third_party/diff-gaussian-rasterization-tamin
 The separately downloaded CoTracker source and weights are subject to their
 upstream license.
 
+## Acknowledgements
+
+The authors would like to thank Meihan Zheng and Yiwen Cai from ShanghaiTech University for processing the dataset. We also thank the reviewers for their feedback. This work was supported by National Key R&D Program of China (2022YFF0902301), Shanghai Local college capacity building program (22010502800). We also acknowledge support from Shanghai Frontiers Science Center of Human-centered Artificial Intelligence (ShangHAI).
+
 ## BibTeX
 
 ```bibtex
@@ -164,3 +172,5 @@ upstream license.
   url={https://arxiv.org/abs/2509.07653}
 }
 ```
+
+We will continue to refine this implementation to improve reconstruction quality and usability.
