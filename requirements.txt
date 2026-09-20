@@ -1,0 +1,29 @@
+# Install PyTorch/torchvision first using the CUDA wheel command in README.md.
+
+# Build tools for the local CUDA extensions (installed separately).
+setuptools==78.1.1
+wheel==0.45.1
+ninja==1.13.0
+packaging==25.0
+
+# Training, geometry and rendering.
+# NumPy 1.x also supports the tested PyTorch 2.1.2 environment.
+numpy>=1.26,<2
+scipy==1.15.3
+scikit-learn==1.7.1
+Pillow==11.1.0
+opencv-python==4.11.0.86
+plyfile==1.1.2
+open3d==0.19.0
+trimesh==4.7.4
+natsort==8.4.0
+rich==14.1.0
+tqdm==4.67.1
+tensorboard==2.20.0
+
+# Bundled RoMa inference and external CoTracker inference.
+einops==0.8.1
+kornia==0.8.1
+matplotlib==3.10.5
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
